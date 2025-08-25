@@ -1,0 +1,242 @@
+{
+	"info": {
+		"_postman_id": "1dddff8c-c78d-43b0-95c3-7c174dee2bd3",
+		"name": "CarsApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "32250979"
+	},
+	"item": [
+		{
+			"name": "Marca",
+			"item": [
+				{
+					"name": "Buscar Marca",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/cars/api/v1/marca"
+					},
+					"response": []
+				},
+				{
+					"name": "Criar Marca",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"nome\":  \"Toyota\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/cars/api/v1/marca"
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar arca",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"FIAT\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/cars/api/v1/marca/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar Marca",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/cars/api/v1/marca/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/cars/api/v1/marca/2"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Modelo",
+			"item": [
+				{
+					"name": "Buscar todos os modelos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/cars/api/v1/modelo"
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar por Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/cars/api/v1/modelo/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Criar Modelo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nome\": \"ONIX Argo\",\r\n  \"valorFipe\": 50000.0,\r\n  \"marcaNome\": \"Toyota\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/cars/api/v1/modelo"
+					},
+					"response": []
+				},
+				{
+					"name": "Alterar Modelo",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nome\": \"ONIX Argo 2025\",\r\n  \"valorFipe\": 52000.0,\r\n  \"marcaNome\": \"Toyota\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/cars/api/v1/modelo/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar Modelo",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/cars/api/v1/modelo/2"
+					},
+					"response": []
+				},
+				{
+					"name": "lista",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Carro",
+			"item": [
+				{
+					"name": "Criar Carro",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"timestamp_cadastro\": 1696549999,\r\n  \"modelo_id\": 1,\r\n  \"ano\": 2020,\r\n  \"combustivel\": \"GASOLINA\",\r\n  \"num_portas\": 2,\r\n  \"cor\": \"VERMELHO\",\r\n  \"valor\": 75000.00\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/cars/api/v1/carro"
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar todos carros",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/cars/api/v1/carro"
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar Carro",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/cars/api/v1/car/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Alterar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"timestamp_cadastro\": 1696549488,\r\n  \"modelo_id\": 1,\r\n  \"ano\": 2014,\r\n  \"combustivel\": \"FLEX\",\r\n  \"num_portas\": 4,\r\n  \"cor\": \"Preto\",\r\n  \"valor\": 50000.00\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/cars/api/v1/carro/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar por ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"timestamp_cadastro\": 1696549488,\r\n  \"modelo_id\": 1,\r\n  \"ano\": 2015,\r\n  \"combustivel\": \"FLEX\",\r\n  \"num_portas\": 4,\r\n  \"cor\": \"Preto\",\r\n  \"valor\": 50000.00\r\n}\r\n"
+						},
+						"url": "http://localhost:8080/cars/api/v1/carro/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Estatistica",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
