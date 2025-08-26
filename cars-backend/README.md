@@ -2,7 +2,7 @@
 
 O **CarrApp Backend** é uma **API REST** desenvolvida em **Spring Boot** para gerenciamento de veículos.  
 O sistema implementa um CRUD completo para **marcas, modelos e carros**, além de fornecer estatísticas via **dashboard**.  
-Projeto criado para estudo e testes como parte do desafio técnico **WS Work**.
+Projeto criado para testes como parte do desafio técnico **WS Work**.
 
 ---
 
