@@ -47,6 +47,13 @@ Projeto criado para testes como parte do desafio técnico **WS Work**.
 
 ---
 
+## 🗂️ Collections de Teste
+
+Para facilitar os testes da API, na pasta /collections do projeto você encontrará arquivos de Collections (Postman/Insomnia) contendo todos os endpoints já configurados.
+
+Basta importar a Collection na sua ferramenta favorita e começar a testar 🚀
+---
+
 # 📖 Documentação com Swagger
 
 - O projeto utiliza o Swagger (via springdoc-openapi) para geração automática da documentação interativa da API.
